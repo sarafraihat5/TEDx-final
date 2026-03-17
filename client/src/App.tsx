@@ -62,17 +62,17 @@ const RouterContent: React.FC = () => {
       <ScrollToTop />
       <Routes>
         <Route element={<PublicLayout />}>
-          <Route path="/" element={<Home />} />
-          <Route path="/speakers" element={<SpeakersPage />} />
+          <Route path="/" element={<Booking />} /> 
+          
+          {/* <Route path="/speakers" element={<SpeakersPage />} />
           <Route path="/schedule" element={<SchedulePage />} />
           <Route path="/team" element={<TeamPage />} />
-          {/* Ticket booking – commented out */}
-          {/* <Route path="/tickets" element={<TicketsPage />} /> */}
+          */}
         </Route>
 
-         <Route path="/booking" element={<Booking />} /> 
-        <Route path="/tickets-login" element={<TicketsLogin />} />
+        <Route path="/tickets-login" element={<TicketsLogin />} /> 
         <Route path="/tickets-management" element={<TicketsManagement />} />
+      
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </>
