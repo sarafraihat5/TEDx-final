@@ -27,11 +27,17 @@ A React + TypeScript + Vite application for managing TEDx event bookings and tic
 npm install
 ```
 
-2. Create a `.env` file in the `client` directory:
+2. Create a `.env` file in the `client` directory (filename must be `.env`, not `.evn`):
 
 ```env
+# Local backend
 VITE_API_URL=http://localhost:3000
+
+# Or production (this project uses Vite — use VITE_API_URL, not REACT_APP_* alone)
+# VITE_API_URL=https://api.tedxammanarabuniversity.com
 ```
+
+`REACT_APP_API_URL` is also supported if you prefer Create React App–style names (see `vite.config.ts` `envPrefix`).
 
 3. Start the development server:
 
