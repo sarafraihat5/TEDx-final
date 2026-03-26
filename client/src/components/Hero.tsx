@@ -1,5 +1,5 @@
 import React from 'react';
-import backgroundImage from '../assets/images/IMG_0329.PNG';
+import backgroundImage from '../assets/images/IMG_0329.png';
 
 interface HeroProps {
   onSeeSpeakers: () => void;
