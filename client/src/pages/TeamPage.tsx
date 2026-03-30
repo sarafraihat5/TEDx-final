@@ -1,5 +1,5 @@
 import React from 'react';
-import { TEAM_MEMBERS } from '../../constants';
+import { TEAM_MEMBERS } from '../constants';
 
 const TeamPage: React.FC = () => {
   return (

@@ -1,5 +1,5 @@
 import React from 'react';
-import { SPEAKERS } from '../../constants';
+import { SPEAKERS } from '../constants';
 
 interface SpeakersProps {
   onSeeAll: () => void;

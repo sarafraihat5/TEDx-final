@@ -1,5 +1,5 @@
 import React from 'react';
-import { SPEAKERS } from '../../constants';
+import { SPEAKERS } from '../constants';
 
 const SpeakersPage: React.FC = () => {
   return (
