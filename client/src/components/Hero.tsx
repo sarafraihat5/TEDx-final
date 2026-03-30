@@ -31,7 +31,7 @@ const Hero: React.FC<HeroProps> = ({ onSeeSpeakers, onGetTickets }) => {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-          {/* تم تفعيل زر التذاكر هنا */}
+         {/*tickets button on*/}
           <button
             onClick={onGetTickets}
             className="w-full sm:w-auto bg-red-600 text-white px-12 py-5 rounded-full font-bold text-lg hover:bg-red-700 transition-all shadow-[0_0_30px_rgba(235,0,40,0.5)] hover:scale-105 active:scale-95"

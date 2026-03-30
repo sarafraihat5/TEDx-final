@@ -1,5 +1,5 @@
 import React from 'react';
-import { ORGANIZER } from '../../constants';
+import { ORGANIZER } from '../constants';
 
 const OrganizerSection: React.FC = () => {
   return (

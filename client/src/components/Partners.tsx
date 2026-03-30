@@ -1,5 +1,5 @@
 import React from 'react';
-import { PARTNERS } from '../../constants';
+import { PARTNERS } from '../constants';
 import type { Partner } from '../../types';
 
 const PartnersSection: React.FC = () => {
