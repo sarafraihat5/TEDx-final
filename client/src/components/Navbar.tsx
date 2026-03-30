@@ -6,11 +6,10 @@ interface NavbarProps {
     | 'speakers'
     | 'schedule'
     | 'team'
-    | 'tickets'
     | 'tickets-login'
     | 'tickets-management';
   onNavigate: (
-    view: 'home' | 'speakers' | 'schedule' | 'team' | 'tickets'
+    view: 'home' | 'speakers' | 'schedule' | 'team'
   ) => void;
 }
 
@@ -64,13 +63,6 @@ const Navbar: React.FC<NavbarProps> = ({ currentView, onNavigate }) => {
                 {link.name}
               </button>
             ))}
-            {/* Ticket booking – commented out */}
-            {/* <button 
-              onClick={() => onNavigate('tickets')}
-              className={`bg-red-600 text-white px-6 py-2 rounded-full font-bold text-xs hover:bg-red-700 transition-all shadow-[0_0_15px_rgba(235,0,40,0.3)] ${currentView === 'tickets' ? 'ring-2 ring-white' : ''}`}
-            >
-              TICKETS
-            </button> */}
           </div>
 
           <div className="md:hidden flex items-center">
@@ -120,13 +112,6 @@ const Navbar: React.FC<NavbarProps> = ({ currentView, onNavigate }) => {
                 {link.name}
               </button>
             ))}
-            {/* Ticket booking – commented out */}
-            {/* <button 
-              onClick={() => { onNavigate('tickets'); setIsMobileMenuOpen(false); }}
-              className="block w-full text-left px-3 py-4 text-sm font-bold tracking-widest text-red-600 uppercase"
-            >
-              TICKETS
-            </button> */}
           </div>
         </div>
       )}
